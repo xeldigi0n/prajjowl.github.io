@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,300&family=Rubik:wght@400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: #8D0801;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 5em;
+    background-color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+.nav-items {
+    flex-direction: row;
+    position: relative;
+    display: flex;
+    padding: 0 1em;
+    margin: 0 1em;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.body-text {
+    position: relative;
+    text-align: center;
+    padding: 2em;
+}
+
+.head {
+    font-size: 700%;
+    padding: .5em .1em .3em .3em;
+    margin: .5em 0 .5em 0;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+}
+
+.subhead {
+    font-size: 250%;
+    font-weight: 300;
+    padding: .3em;
+    margin: 0 auto .3em auto;
+    font-family: "Nunito", sans-serif;
+    color: white;
+}
+
+.buttons {
+    padding: 1em;
+    margin: 1em auto auto auto;
+    text-align: center;
+}
