@@ -65,3 +65,24 @@ nav {
     margin: 1em auto auto auto;
     text-align: center;
 }
+
+@media screen and (max-width:768px) {
+    .head {
+        padding: .5em;
+        margin: .2em auto .5em auto;
+        font-size: 550%;
+    }
+    .subhead {
+        font-size: 200%;
+        padding: .5em auto;
+        margin: .5em auto;
+    }
+    .nav-links a {
+        padding: 0 1em;
+        margin: 0 .5em;
+    }
+    .buttons {
+        padding: .5em auto;
+        margin: 1em auto;
+    }
+}
