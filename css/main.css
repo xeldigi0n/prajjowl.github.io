@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    #text-decoration: none;
 }
 
 body {
@@ -33,6 +32,7 @@ nav {
     text-decoration: none;
     padding: 0 1em;
     margin: 0 1em;
+    letter-spacing: .07em;
 }
 
 .body-text {
