@@ -44,8 +44,8 @@ nav {
 
 .head {
     font-size: 700%;
-    padding: .5em .1em .3em .3em;
-    margin: .5em 0 .5em 0;
+    padding: 10vh 4vh 8vh 4vh;
+    margin: 3vh;
     color: white;
     font-family: "Rubik", sans-serif;
     font-weight: 500;
@@ -54,35 +54,35 @@ nav {
 .subhead {
     font-size: 250%;
     font-weight: 300;
-    padding: .3em;
-    margin: 0 auto .3em auto;
+    padding: 2vh auto 4vh auto;
+    margin: 2vh auto 4vh auto;
     font-family: "Nunito", sans-serif;
     color: white;
 }
 
 .buttons {
-    padding: 1em;
-    margin: 1em auto auto auto;
+    padding: 6vh auto 2ch auto;
+    margin: 4vh auto;
     text-align: center;
 }
 
 @media screen and (max-width:768px) {
     .head {
-        padding: .5em;
-        margin: .2em auto .5em auto;
+        padding: 2vh auto;
+        margin: 2vh auto;
         font-size: 550%;
     }
     .subhead {
         font-size: 200%;
-        padding: .5em auto;
-        margin: .5em auto;
+        padding: 3vh auto;
+        margin: 3vh auto;
     }
     .nav-links a {
         padding: 0 1em;
         margin: 0 .5em;
     }
     .buttons {
-        padding: .5em auto;
-        margin: 1em auto;
+        padding: 2vh auto;
+        margin: 2vh auto;
     }
 }
