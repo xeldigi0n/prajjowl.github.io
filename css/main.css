@@ -14,7 +14,6 @@ ul {
 
 nav {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     min-height: 12vh;
@@ -29,6 +28,7 @@ nav {
 }
 
 .nav-links a {
+    flex-direction: row;
     color: #8D0801;
     text-decoration: none;
     padding: 0 1em;
