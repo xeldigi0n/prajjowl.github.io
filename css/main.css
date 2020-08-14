@@ -93,3 +93,21 @@ header {
         margin: -.5em;
     }
 }
+
+@media only screen and (max-aspect-ratio: 16/9) {
+    body {
+        background-color: #8d0801;
+    }
+    .head {
+        font-size: 600%;
+        padding: 0.2em auto;
+    }
+    .subhead {
+        font-size: 220%;
+        padding: 1.5em;
+    }
+    .navlinks li {
+        padding: 0;
+        margin: -.5em;
+    }
+}
