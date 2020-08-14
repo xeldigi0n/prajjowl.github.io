@@ -76,3 +76,20 @@ header {
     font-size: 300%;
     color: #ffffff;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #8d0801;
+    }
+    .head {
+        font-size: 600%;
+    }
+    .subhead {
+        font-size: 220%;
+        padding: 1em;
+    }
+    .navlinks li {
+        padding: 0;
+        margin: -.5em;
+    }
+}
