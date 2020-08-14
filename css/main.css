@@ -5,102 +5,74 @@
 }
 
 body {
-    background-color: #8D0801;
-    transition: .8s;
+    background-color: #8d0801;
 }
 
-ul {
-    list-style-type: none;
-}
-
-nav {
+header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 12vh;
+    min-height: 10vh;
+    position: fixed;
+    bottom: 0em;
+    width: 100%;
     background-color: white;
     font-family: 'Nunito', sans-serif;
 }
 
 .navlinks {
-    position: relative;
     display: flex;
     justify-content: space-around;
 }
 
+.navlinks li {
+    display: inline-block;
+    list-style-type: none;
+}
+
 .navlinks a {
     flex-direction: row;
-    color: #8D0801;
+    color: #8d0801;
     text-decoration: none;
     padding: 0 1em;
     margin: 0 1em;
     letter-spacing: .07em;
 }
 
-#bodytext {
-    position: relative;
-    text-align: center;
-    padding: 2em;
+.navlinks a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 4px;
+    left: 50%;
+    position: absolute;
+    background: currentColor;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
 }
 
-#head {
-    font-size: 700%;
-    padding: 10vh 4vh 8vh 4vh;
-    margin: 3vh;
-    color: white;
+.navlinks a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.bodytext {
     font-family: "Rubik", sans-serif;
-    font-weight: 400;
+    text-align: center;
 }
 
-#subhead {
-    font-size: 275%;
-    font-weight: 300;
-    padding: 2vh auto 4vh auto;
-    margin: 2vh auto 4vh auto;
-    font-family: "Nunito", sans-serif;
-    color: white;
+.head {
+    padding: 0.5em .3em 0;
+    margin: 0.5em 0;
+    font-size: 675%;
+    font-weight: 500;
+    color: #ffffff;
 }
 
-#buttons {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    justify-content: center;
-    padding: 1em;
-    margin: 1em;
-}
-
-@media screen and (max-width:768px) {
-    .head {
-        padding: 2vh auto;
-        margin: 2vh auto;
-        font-size: 550%;
-    }
-    .subhead {
-        font-size: 200%;
-        padding: 3vh auto;
-        margin: 3vh auto;
-    }
-    .nav-links a {
-        padding: 0 1em;
-        margin: 0 .5em;
-    }
-    .buttons {
-        padding: 4vh auto;
-        margin: 4vh auto;
-    }
-}
-
-.plus {
-    background-image: url("https://cdn0.iconfinder.com/data/icons/ie_Bright/128/plus_add_blue.png");
-    width: 130px;
-    height: 130px;
-    background-repeat: no-repeat;
-}
-
-.plus.minus {
-    background-image: url("https://cdn0.iconfinder.com/data/icons/ie_Bright/128/plus_add_minus.png");
-    width: 130px;
-    height: 130px;
-    background-repeat: no-repeat;
+.subhead {
+    padding: 0.5em .5em;
+    margin: 0.5em 0;
+    font-size: 300%;
+    color: #ffffff;
 }
