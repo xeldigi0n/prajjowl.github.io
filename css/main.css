@@ -63,24 +63,6 @@ header {
     letter-spacing: .07em;
 }
 
-.navlinks a:after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 4px;
-    left: 50%;
-    position: absolute;
-    background: currentColor;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-}
-
-.navlinks a:hover:after {
-    width: 100%;
-    left: 0;
-}
-
 .bodytext {
     font-family: "Rubik", sans-serif;
     text-align: center;
@@ -119,6 +101,22 @@ header {
         padding: 0;
         margin: -.5em;
     }
+    .navlinks a:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 4px;
+        left: 50%;
+        position: absolute;
+        background: currentColor;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+    .navlinks a:hover:after {
+        width: 100%;
+        left: 0;
+    }
 }
 
 @media only screen and (bmax-aspect-ratio: 16/9) {
@@ -139,5 +137,21 @@ header {
     .navlinks li {
         padding: 0;
         margin: -.5em;
+    }
+    .navlinks a:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 4px;
+        left: 50%;
+        position: absolute;
+        background: currentColor;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+    .navlinks a:hover:after {
+        width: 100%;
+        left: 0;
     }
 }
