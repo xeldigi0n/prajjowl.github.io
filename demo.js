@@ -49,7 +49,7 @@
             requestAnimationFrame(() => this.render());
         }
         enter() {
-            cursor.scale = 2.7;
+            cursor.scale = 1.8;
         }
         leave() {
             cursor.scale = 1;
@@ -61,9 +61,6 @@
     }
 
     const cursor = new CursorFx(document.querySelector('.cursor'));
-    const slideshow = new Slideshow(document.querySelector('.slideshow'));
-    const nav = new Navigation(document.querySelector('.nav'));
-    slideshow.nav = nav;
 
     // Custom cursor chnages state when hovering on elements with 'data-hover'.
     [...document.querySelectorAll('[data-hover]')].forEach((link) => {
