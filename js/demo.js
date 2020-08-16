@@ -68,4 +68,18 @@
         link.addEventListener('mouseleave', () => cursor.leave());
         link.addEventListener('click', () => cursor.click());
     });
+
+    //Sticky Navbar
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() { myFunction() };
+    var navbar = document.getElementById("navbar");
+    var navlinks = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("navlinks")
+        } else {
+            navbar.classList.remove("navlinks");
+        }
+    }
 }
