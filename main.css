@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,300&family=Rubik:wght@400;500&display=swap');
+@import 'https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,300&family=Rubik:wght@400;500&display=swap';
 * {
     margin: 0;
     padding: 0;
-    cursor: none;
+    cursor: none
 }
 
 .cursor__inner {
@@ -12,19 +12,19 @@
     top: 0;
     left: 0;
     mix-blend-mode: difference;
-    border-radius: 50%;
+    border-radius: 50%
 }
 
 .cursor__inner--dot {
     width: 6px;
     height: 6px;
-    background: #fff;
+    background: #fff
 }
 
 .cursor__inner--circle {
     width: 20px;
     height: 20px;
-    border: 1px solid #fff;
+    border: 1px solid #fff
 }
 
 body {
@@ -38,10 +38,10 @@ nav {
     align-items: center;
     min-height: 10vh;
     position: fixed;
-    bottom: 0em;
+    bottom: 0;
     width: 100%;
-    background-color: white;
-    font-family: 'Nunito', sans-serif;
+    background-color: #fff;
+    font-family: nunito, sans-serif
 }
 
 .navlinks {
@@ -60,48 +60,48 @@ nav {
     text-decoration: none;
     padding: 0 1em;
     margin: 0 1em;
-    letter-spacing: .07em;
+    letter-spacing: .07em
 }
 
 .bodytext {
-    font-family: "Rubik", sans-serif;
-    text-align: center;
+    font-family: rubik, sans-serif;
+    text-align: center
 }
 
 .head {
-    padding: 0.5em .3em 0;
-    margin: 0.5em 0;
+    padding: .5em .3em 0;
+    margin: .5em 0;
     font-size: 675%;
     font-weight: 500;
-    color: #ffffff;
-    text-shadow: 2px 2px 5px rgb(145, 54, 54);
+    color: #fff;
+    text-shadow: 2px 2px 5px #913636
 }
 
 .subhead {
-    padding: 0.5em .5em;
-    margin: 0.5em 0;
+    padding: .5em;
+    margin: .5em 0;
     font-size: 300%;
-    color: #ffffff;
-    text-shadow: 2px 2px 5px rgb(145, 54, 54);
+    color: #fff;
+    text-shadow: 2px 2px 5px #913636
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width:600px) {
     body {
-        background-color: #8d0801;
+        background-color: #8d0801
     }
     .cursor {
-        visibility: hidden;
+        visibility: hidden
     }
     .head {
-        font-size: 600%;
+        font-size: 600%
     }
     .subhead {
         font-size: 220%;
-        padding: 1em;
+        padding: 1em
     }
     .navlinks li {
         padding: 0;
-        margin: -.5em;
+        margin: -.5em
     }
     .navlinks a:after {
         background: none repeat scroll 0 0 transparent;
@@ -112,33 +112,33 @@ nav {
         left: 50%;
         position: absolute;
         background: currentColor;
-        transition: width 0.3s ease 0s, left 0.3s ease 0s;
-        width: 0;
+        transition: width .3s ease 0s, left .3s ease 0s;
+        width: 0
     }
     .navlinks a:hover:after {
         width: 100%;
-        left: 0;
+        left: 0
     }
 }
 
-@media only screen and (bmax-aspect-ratio: 16/9) {
+@media only screen and (bmax-aspect-ratio:16/9) {
     body {
-        background-color: #8d0801;
+        background-color: #8d0801
     }
     .cursor {
-        visibility: hidden;
+        visibility: hidden
     }
     .head {
         font-size: 600%;
-        padding: 0.2em auto;
+        padding: .2em auto
     }
     .subhead {
         font-size: 220%;
-        padding: 1.5em;
+        padding: 1.5em
     }
     .navlinks li {
         padding: 0;
-        margin: -.5em;
+        margin: -.5em
     }
     .navlinks a:after {
         background: none repeat scroll 0 0 transparent;
@@ -149,11 +149,11 @@ nav {
         left: 50%;
         position: absolute;
         background: currentColor;
-        transition: width 0.3s ease 0s, left 0.3s ease 0s;
-        width: 0;
+        transition: width .3s ease 0s, left .3s ease 0s;
+        width: 0
     }
     .navlinks a:hover:after {
         width: 100%;
-        left: 0;
+        left: 0
     }
 }
