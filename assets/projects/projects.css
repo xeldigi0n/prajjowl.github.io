@@ -79,6 +79,8 @@ nav {
 .more-projects a {
     text-decoration: none;
     flex-direction: column;
+    font-family: Nunito;
+    color: #001427;
 }
 
 body,
