@@ -262,7 +262,7 @@ body {
     }
     body,
     html {
-        height: 133%;
+        height: 190vh;
     }
     body {
         background-color: #D2DBDD;
@@ -328,12 +328,23 @@ body {
     .cursor {
         visibility: hidden;
     }
+    body,
+    html {
+        height: 190vh;
+    }
+    body {
+        background-color: #D2DBDD;
+        display: flex;
+        display: -webkit-flex;
+        -webkit-justify-content: center;
+        -webkit-align-items: center;
+        justify-content: center;
+    }
     .cards {
+        display: flex;
         position: relative;
         flex-direction: column;
-        align-items: center;
         width: 100%;
-        display: flex;
     }
     .card {
         margin-top: 20px;
@@ -349,6 +360,31 @@ body {
     .card:hover {
         box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
         transform: scale(1.05, 1.05);
+    }
+    .navlinks li {
+        padding: 0;
+        margin: -.5em
+    }
+    .more-projects {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        text-align: center;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 10vh;
+        bottom: 0;
+        width: 100%;
+        position: fixed;
+        background-color: #fff;
+        font-family: nunito, sans-serif
+    }
+    .navlinks {
+        display: flex;
+        justify-content: space-around;
     }
     .navlinks li {
         padding: 0;
