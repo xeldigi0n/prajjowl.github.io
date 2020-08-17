@@ -60,6 +60,10 @@ nav {
     letter-spacing: .07em
 }
 
+.navlinks a:hover {
+    color: #AD7D52;
+}
+
 .more-projects {
     display: flex;
     justify-content: space-around;
@@ -81,6 +85,10 @@ nav {
     flex-direction: column;
     font-family: Nunito;
     color: #001427;
+}
+
+.view-all-projects a:hover {
+    color: #AD7D52;
 }
 
 body,
@@ -125,12 +133,12 @@ body {
 
 .card-2 .card_img,
 .card-2 .card_img-hover {
-    background-image: url(./images/newroad.jpg);
+    background-image: url(./images/Bootcamp2.jpg);
 }
 
 .card-3 .card_img,
 .card-3 .card_img-hover {
-    background-image: url(./images/newroad.jpg);
+    background-image: url(./images/Schoolbus1.jpg);
 }
 
 .card_like {
