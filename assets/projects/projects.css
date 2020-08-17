@@ -72,7 +72,7 @@ nav {
 .more-projects li {
     list-style-type: none;
     padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-bottom: 1vh;
     flex-direction: column;
 }
 
