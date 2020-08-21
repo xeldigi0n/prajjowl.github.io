@@ -38,7 +38,8 @@ nav {
     bottom: 0;
     width: 100%;
     background-color: #fff;
-    font-family: nunito, sans-serif
+    font-family: nunito, sans-serif;
+    z-index: 1;
 }
 
 .navlinks {
@@ -91,12 +92,55 @@ nav {
     color: #AD7D52;
 }
 
+.overflow {
+    margin: 2em;
+    padding: 2em;
+    font-family: 'Nunito', sans-serif;
+    z-index: 10;
+}
+
+.custombrand {
+    position: fixed;
+    justify-content: right;
+    top: 0;
+    right: 0;
+    padding: 2em;
+    margin: 2em;
+    scale: 0.9;
+}
+
+.sidebar-navigation {
+    flex-direction: column;
+}
+
+.sidebar-title {
+    bottom: 0;
+    padding: 0em;
+    margin: -.6em;
+    margin-bottom: 13em;
+    position: absolute;
+    writing-mode: sideways-rl;
+    transform: rotate(180deg);
+    letter-spacing: .07em;
+    font-weight: 500;
+    color: #001427;
+}
+
+.sidebar-line {
+    margin-bottom: 9em;
+    padding: 0;
+    position: fixed;
+    bottom: 0em;
+    width: 2px;
+    height: 50px;
+    background-color: #001427;
+}
+
 body,
 html {
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 0;
     padding: 0;
 }
 
@@ -106,13 +150,6 @@ body {
     display: -webkit-flex;
     -webkit-justify-content: center;
     -webkit-align-items: center;
-    justify-content: center;
-}
-
-.navlinks {
-    display: flex;
-    text-align: center;
-    justify-content: center;
 }
 
 .cards {
