@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 body {
@@ -49,13 +50,9 @@ ul {
     z-index: -1;
 }
 
-.container {
-    text-align: center;
-}
-
 .signature {
     transform: scale(0.7);
-    position: absolute;
+    position: fixed;
     margin-top: 1em;
     right: 0;
     z-index: 5;
@@ -68,14 +65,6 @@ header {
 
 .forpc {
     display: none;
-}
-
-.menu {
-    margin-top: 1.5em;
-    margin-left: 1.5em;
-    position: absolute;
-    z-index: 5;
-    transform: scale(1.3);
 }
 
 .exit-button {
@@ -165,6 +154,110 @@ header {
     padding-right: 0 1em;
 }
 
+.container {
+    margin-top: 0px;
+    Display: flex;
+    align-items: center;
+    z-index: 10;
+    position: fixed;
+}
+
+.content {
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    background-color: none;
+    height: 100vh;
+}
+
+#menuToggle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 20px;
+    left: 25px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle input {
+    display: flex;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 5;
+}
+
+#menuToggle span {
+    display: flex;
+    width: 30px;
+    margin: 4px 0;
+    height: 3px;
+    stroke-linecap: round;
+    position: relative;
+    background: #001427;
+    z-index: 5;
+    transform-origin: 5px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(10px, 2px);
+    background: #fff;
+}
+
+#menuToggle input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(-5px, 15px);
+}
+
+#menus {
+    position: absolute;
+    width: 200px;
+    height: 100vh;
+    margin: -50px 0 0 -50px;
+    padding: 50px;
+    padding-top: 150px;
+    background-color: #001427;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menus li {
+    margin: 0;
+    padding: 0 0 3em .5em;
+}
+
+#menus a {
+    text-decoration: none;
+    color: #fff;
+    opacity: 1;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.4em;
+    font-weight: 400;
+    transition: 200ms;
+}
+
+#menuToggle input:checked~ul {
+    transform: none;
+}
+
 @media only screen and (min-width: 570px) {
     .title {
         margin: 30vh 0;
@@ -189,6 +282,9 @@ header {
         width: 100%;
         background-color: #fff;
         font-family: nunito, sans-serif;
+    }
+    .container {
+        display: none;
     }
     .navlinks {
         display: flex;

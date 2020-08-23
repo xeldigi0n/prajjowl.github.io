@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="testcss.css">
+    <link rel="stylesheet" href="assets/profile/profile.css">
 </head>
 
 <body>
@@ -15,7 +15,29 @@
         <h1 class="footer">Design, and<br>Redesign.</h1>
     </div>
 
+
+
     <div class="container">
+
+        <div class="content">
+
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <ul id="menus">
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="bathokoshero.html">Batho Koshero</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <div class="signature-icon">
         <header>
             <div class="second-navigation">
                 <div class="signature">
@@ -33,19 +55,6 @@
         </ul>
     </div>
 
-    <div id="mobile-nav">
-        <a href="#" class="show">
-            <img src="./assets/common resources/menu-dark.svg" alt="toggle menu" class="menu" id="menu">
-        </a>
-
-        <ul class="show hide" id="mobile-nav">
-            <li id="exit" class="exit-button show"><img src="./assets/common resources/menu-exit-white.svg" alt="exit menu"></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="bathokoshero.html">Batho Koshero</a></li>
-            <li><a href="profile.html">Profile</a></li>
-        </ul>
-    </div>
-
     <div class="sidebar-navigation">
         <div class="sidebar-line"></div>
         <p class="sidebar-title">Profile</p>
@@ -56,33 +65,23 @@
     <div id="parallax-overflow">
         <h3 class="subtitle">This is Prajjwal.<br>Prajjwal Designs.</h3>
         <div class="image-section">
-            <div class="image1"><img src="./assets/about/images/image1.png" alt=""></div>
-            <div class="image2"><img src="./assets/about/images/image2.png" alt=""></div>
+            <div class="image1"><img src="./assets/profile/images/image1.png" alt=""></div>
+            <div class="image2"><img src="./assets/profile/images/image2.png" alt=""></div>
         </div>
         <p class="body-text">Prajjwal is also a tinkerer and a maker who has been resonating between building and breaking his possessions since his childhood. This could be one of the reasons behind his inclination towards Mechanical Engineering major. Maybe not! Share your
             path, get to know him better and grow with him together.</p>
         <div id="email">
             <a class="mail-to" href="mailto:hello@prajjowl.com.np?subject=Hey Prajjwal!">
-                <img class="mail" src="./assets/about/images/Mail.png" alt="mail icon">
+                <img class="mail" src="./assets/profile/images/Mail.png" alt="mail icon">
                 <p class="say-hello">Say Hello</p>
-                <img class="arrow" src="./assets/about/images/arrow.png" alt="arrow">
+                <img class="arrow" src="./assets/profile/images/arrow.png" alt="arrow">
             </a>
         </div>
     </div>
 
     <div class="parallax"></div>
 
-    <script>
-        var menu = document.getElementById('menu');
-        var navs = document.getElementById('navs');
-        var exit = document.getElementById('exit');
-
-        menu.addEventListener('click', function(e) {
-            nav.classList.toggle('forpc')
-        });
-    </script>
-
-
+    <script src="js/demo.js"></script>
 </body>
 
 </html>
