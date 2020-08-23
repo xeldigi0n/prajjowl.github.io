@@ -346,7 +346,7 @@ nav {
     }
     #parallax-overflow {
         margin: 100vh 0;
-        height: 200vh;
+        height: 100vh;
         background-color: #fff;
     }
     .subtitle {
@@ -357,36 +357,26 @@ nav {
         text-align: center;
     }
     .image2 {
-        transform: scale(0.7);
-        padding: -3em;
-        margin: -03em;
-        z-index: 1;
+        display: none;
     }
-}
-
-.body-text {
-    font-size: 2em;
-    margin: 1em 2em 0;
-    padding: 1em 1em 0;
-    text-align: center;
-}
-
-#email {
-    justify-content: center;
-    text-align: center;
-    background: #fff;
-    padding: 5em;
-}
-
-.say-hello {
-    font-size: 2em;
-    padding: 0 1em;
-}
-
-.mail,
-.arrow {
-    transform: scale(.8);
-}
-
-
+    .body-text {
+        font-size: 2em;
+        margin: 1em 2em 0;
+        padding: 1em 1em 0;
+        text-align: center;
+    }
+    #email {
+        justify-content: center;
+        text-align: center;
+        background: #fff;
+        padding: 5em;
+    }
+    .say-hello {
+        font-size: 2em;
+        padding: 0 1em;
+    }
+    .mail,
+    .arrow {
+        transform: scale(.8);
+    }
 }
