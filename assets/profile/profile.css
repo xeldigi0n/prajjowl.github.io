@@ -335,8 +335,7 @@ nav {
         margin-left: 3.4em;
         margin-bottom: 12.5em;
         position: fixed;
-        writing-mode: sideways-rl;
-        transform: rotate(180deg);
+        writing-mode: sideways-lr;
         letter-spacing: .07em;
         font-weight: 500;
         color: #001427;
