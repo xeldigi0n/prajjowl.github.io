@@ -314,10 +314,12 @@ nav {
         position: fixed;
     }
     .sidebar-navigation {
+        display: block;
         display: flex;
         flex-direction: row;
     }
     .sidebar-line {
+        display: block;
         margin-bottom: 8em;
         margin-left: 4em;
         padding: 0em;
