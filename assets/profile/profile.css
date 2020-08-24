@@ -52,7 +52,7 @@ ul {
 
 .signature {
     transform: scale(0.7);
-    position: absolute;
+    position: fixed;
     margin-top: 1em;
     right: 0;
     z-index: 5;
@@ -140,7 +140,7 @@ header {
     Display: flex;
     align-items: center;
     z-index: 10;
-    position: absolute;
+    position: fixed;
 }
 
 .content {
