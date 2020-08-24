@@ -69,13 +69,6 @@ nav {
     color: #AD7D52;
 }
 
-.overflow {
-    margin: 2em;
-    padding: 2em;
-    font-family: 'Nunito', sans-serif;
-    z-index: 10;
-}
-
 .custombrand {
     position: fixed;
     justify-content: right;
