@@ -7,7 +7,7 @@
 
 body {
     margin: 0;
-    background: #8D0801;
+    background: #001427;
 }
 
 p {
@@ -145,7 +145,7 @@ nav {
 #menuToggle input:checked~span {
     opacity: 1;
     transform: rotate(45deg) translate(10px, 2px);
-    background: #8D0801;
+    background: #001427;
 }
 
 #menuToggle input:checked~span:nth-last-child(2) {
@@ -173,7 +173,7 @@ nav {
 
 #menus a {
     text-decoration: none;
-    color: #8D0801;
+    color: #001427;
     opacity: 1;
     font-family: 'Nunito', sans-serif;
     font-size: 1.4em;
@@ -236,14 +236,14 @@ nav {
     }
     .navlinks a {
         flex-direction: row;
-        color: #8D0801;
+        color: #001427;
         text-decoration: none;
         padding: 0 1em;
         margin: 0 1em;
         letter-spacing: .07em
     }
     .navlinks a:hover {
-        color: #001427;
+        color: #00142773;
     }
     #navs {
         position: fixed;
