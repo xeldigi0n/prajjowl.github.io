@@ -314,11 +314,10 @@ nav {
         position: fixed;
     }
     .sidebar-navigation {
-        display: block;
-        flex-direction: row;
+        display: inline-block;
     }
     .sidebar-line {
-        display: block;
+        display: inline-block;
         margin-bottom: 8em;
         margin-left: 4em;
         padding: 0em;
@@ -330,7 +329,7 @@ nav {
         background-color: #001427;
     }
     .sidebar-title {
-        display: block;
+        display: inline-block;
         z-index: 10;
         bottom: 0;
         padding: 0em;
