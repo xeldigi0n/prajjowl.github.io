@@ -67,20 +67,6 @@ header {
     display: none;
 }
 
-.exit-button {
-    margin-bottom: 1em;
-    margin-top: -1.3em;
-    text-align: left;
-    padding: 1em 2em;
-    z-index: 5;
-}
-
-.exit-button img {
-    transform: scale(1.5);
-    cursor: pointer;
-    z-index: 5;
-}
-
 .footer {
     text-align: left;
     font-family: 'Rubik', sans-serif;

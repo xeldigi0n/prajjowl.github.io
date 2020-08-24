@@ -4,39 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>- Prajjwal Uprety</title>
-    <link rel="stylesheet" href="main.css" type="text/css">
+    <title>Prajjwal's Wall</title>
+    <link rel="stylesheet" href="main.css">
     <link rel="icon" href="./assets/common resources/Favicon.png" type="image/gif">
 </head>
 
 <body>
-    <nav>
-        <div class="navlinks" data-hover>
-            <ul>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="bathokoshero.html">Batho Koshero</a></li>
-                <li><a href="profile.html">Profile</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <div class="overflow">
-        <div class="sidebar-navigation">
-            <p class="sidebar-title">Prajjwal's Wall</p>
-            <div class="sidebar-line"></div>
-        </div>
-    </div>
+    <!--------------------------------- Background Text ---------------------------------------->
 
-    <div class="custombrand">
-        <img src="assets/common resources/custombrand-white.svg" alt="#">
-    </div>
-
-    <div class="bodytext">
-        <h1 class="head">Hey there!</h1>
+    <div class="background">
+        <h1 class="title">Hey there!</h1>
         <p class="subhead">How is it going?</p>
     </div>
 
-    <script src="js/demo.js"></script>
+
+    <!--------------------------------- Mobile Navigation ---------------------------------------->
+
+    <div class="container">
+
+        <div class="content">
+
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <ul id="menus">
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="bathokoshero.html">Batho Koshero</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!--------------------------------- Signature ---------------------------------------->
+
+    <div class="signature-icon">
+        <header>
+            <div class="second-navigation">
+                <div class="signature">
+                    <a href="index.html"><img src="./assets/common resources/custombrand-white.svg" alt="brand-identity"></a>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!--------------------------------- Desktop Navigation ---------------------------------------->
+
+    <div class="desktop-nav">
+        <ul class="navlinks">
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="bathokoshero.html">Batho Koshero</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </div>
+
+    <!--------------------------------- Sidebar Navigation ---------------------------------------->
+
+    <div class="sidebar-navigation">
+        <div class="sidebar-line"></div>
+        <p class="sidebar-title">Prajjwal's Wall</p>
+    </div>
+
+
 </body>
 
 </html>

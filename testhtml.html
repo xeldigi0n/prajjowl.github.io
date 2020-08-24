@@ -4,85 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="testcss.css">
+    <title>- Prajjwal Uprety</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="icon" href="./assets/common resources/Favicon.png" type="image/gif">
 </head>
 
 <body>
-
-    <div class="background">
-        <h1 class="title">Design, and <br>Redesign.</h1>
-        <h1 class="footer">Design, and<br>Redesign.</h1>
-    </div>
-
-    <div class="container">
-        <header>
-            <div class="second-navigation">
-                <div class="signature">
-                    <a href="index.html"><img src="./assets/common resources/custombrand-dark.svg" alt="brand-identity"></a>
-                </div>
-            </div>
-        </header>
-    </div>
-
-    <div class="desktop-nav">
-        <ul class="navlinks">
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="bathokoshero.html">Batho Koshero</a></li>
-            <li><a href="profile.html">Profile</a></li>
-        </ul>
-    </div>
-
-    <div id="mobile-nav">
-        <a href="#" class="show">
-            <img src="./assets/common resources/menu-dark.svg" alt="toggle menu" class="menu" id="menu">
-        </a>
-
-        <ul class="show hide" id="mobile-nav">
-            <li id="exit" class="exit-button show"><img src="./assets/common resources/menu-exit-white.svg" alt="exit menu"></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="bathokoshero.html">Batho Koshero</a></li>
-            <li><a href="profile.html">Profile</a></li>
-        </ul>
-    </div>
-
-    <div class="sidebar-navigation">
-        <div class="sidebar-line"></div>
-        <p class="sidebar-title">Profile</p>
-    </div>
-
-    <div class="parallax"></div>
-
-    <div id="parallax-overflow">
-        <h3 class="subtitle">This is Prajjwal.<br>Prajjwal Designs.</h3>
-        <div class="image-section">
-            <div class="image1"><img src="./assets/about/images/image1.png" alt=""></div>
-            <div class="image2"><img src="./assets/about/images/image2.png" alt=""></div>
+    <nav>
+        <div class="navlinks" data-hover>
+            <ul>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="bathokoshero.html">Batho Koshero</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
         </div>
-        <p class="body-text">Prajjwal is also a tinkerer and a maker who has been resonating between building and breaking his possessions since his childhood. This could be one of the reasons behind his inclination towards Mechanical Engineering major. Maybe not! Share your
-            path, get to know him better and grow with him together.</p>
-        <div id="email">
-            <a class="mail-to" href="mailto:hello@prajjowl.com.np?subject=Hey Prajjwal!">
-                <img class="mail" src="./assets/about/images/Mail.png" alt="mail icon">
-                <p class="say-hello">Say Hello</p>
-                <img class="arrow" src="./assets/about/images/arrow.png" alt="arrow">
-            </a>
+    </nav>
+
+    <div class="overflow">
+        <div class="sidebar-navigation">
+            <p class="sidebar-title">Prajjwal's Wall</p>
+            <div class="sidebar-line"></div>
         </div>
     </div>
 
-    <div class="parallax"></div>
+    <div class="custombrand">
+        <img src="assets/common resources/custombrand-white.svg" alt="#">
+    </div>
 
-    <script>
-        var menu = document.getElementById('menu');
-        var navs = document.getElementById('navs');
-        var exit = document.getElementById('exit');
+    <div class="bodytext">
+        <h1 class="head">Hey there!</h1>
+        <p class="subhead">How is it going?</p>
+    </div>
 
-        menu.addEventListener('click', function(e) {
-            nav.classList.toggle('forpc')
-        });
-    </script>
-
-
+    <script src="js/demo.js"></script>
 </body>
 
 </html>
