@@ -332,10 +332,10 @@ nav {
         z-index: 10;
         bottom: 0;
         padding: 0em;
-        margin-left: 3.4em;
-        margin-bottom: 12.5em;
+        margin-left: 2.4em;
+        margin-bottom: 13.5em;
         position: fixed;
-        writing-mode: sideways-lr;
+        transform: rotate(-90deg);
         letter-spacing: .07em;
         font-weight: 500;
         color: #001427;
