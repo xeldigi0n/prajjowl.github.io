@@ -86,33 +86,6 @@ nav {
     scale: 0.9;
 }
 
-.sidebar-navigation {
-    flex-direction: column;
-}
-
-.sidebar-title {
-    bottom: 0;
-    padding: 0em;
-    margin: -.6em;
-    margin-bottom: 13em;
-    position: absolute;
-    writing-mode: sideways-rl;
-    transform: rotate(180deg);
-    letter-spacing: .07em;
-    font-weight: 500;
-    color: #001427;
-}
-
-.sidebar-line {
-    margin-bottom: 9em;
-    padding: 0;
-    position: fixed;
-    bottom: 0em;
-    width: 2px;
-    height: 50px;
-    background-color: #001427;
-}
-
 body,
 html {
     width: 100%;
