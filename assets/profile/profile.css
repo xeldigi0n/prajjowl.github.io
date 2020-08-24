@@ -337,6 +337,8 @@ nav {
         margin-bottom: 13.5em;
         position: fixed;
         -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
         -ms-transform: rotate(-90deg);
         transform: rotate(-90deg);
         letter-spacing: .07em;
