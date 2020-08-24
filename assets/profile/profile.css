@@ -315,7 +315,6 @@ nav {
     }
     .sidebar-navigation {
         display: block;
-        display: flex;
         flex-direction: row;
     }
     .sidebar-line {
