@@ -1,0 +1,428 @@
+@import 'https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,300&family=Rubik:wght@400;500&display=swap';
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background: #D2DBDD;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.desktop-nav {
+    display: none;
+}
+
+.sidebar-navigation {
+    display: none;
+}
+
+.signature {
+    transform: scale(0.7);
+    position: fixed;
+    margin-top: 1em;
+    right: 0;
+    z-index: 5;
+}
+
+.forpc {
+    display: none;
+}
+
+.container {
+    margin-top: 0px;
+    Display: flex;
+    align-items: center;
+    z-index: 10;
+    position: fixed;
+}
+
+.content {
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    background-color: none;
+    height: 100vh;
+}
+
+#menuToggle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 20px;
+    left: 25px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle input {
+    display: flex;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 5;
+}
+
+#menuToggle span {
+    display: flex;
+    width: 30px;
+    margin: 4px 0;
+    height: 3px;
+    stroke-linecap: round;
+    position: relative;
+    background: #001427;
+    z-index: 5;
+    transform-origin: 5px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(10px, 2px);
+    background: #D2DBDD;
+}
+
+#menuToggle input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(-5px, 15px);
+}
+
+#menus {
+    position: absolute;
+    width: 200px;
+    height: 100vh;
+    margin: -50px 0 0 -50px;
+    padding: 50px;
+    padding-top: 150px;
+    background-color: #001427;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menus li {
+    margin: 0;
+    padding: 0 0 3em .5em;
+}
+
+#menus a {
+    text-decoration: none;
+    color: #D2DBDD;
+    opacity: 1;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.4em;
+    font-weight: 400;
+    transition: 200ms;
+}
+
+#menuToggle input:checked~ul {
+    transform: none;
+}
+
+.cards {
+    align-items: center;
+    vertical-align: middle;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    -webkit-justify-content: center;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+}
+
+.card-1 .card_img,
+.card-1 .card_img-hover {
+    background-image: url(./assets/projects/images/newroad.jpg);
+}
+
+.card-2 .card_img,
+.card-2 .card_img-hover {
+    background-image: url(./assets/projects/images/Bootcamp2.jpg);
+}
+
+.card-3 .card_img,
+.card-3 .card_img-hover {
+    background-image: url(./assets/projects/images/Schoolbus1.jpg);
+}
+
+.card_like {
+    width: 18px;
+}
+
+.card_clock {
+    width: 15px;
+    vertical-align: middle;
+    fill: #AD7D52;
+    visibility: hidden;
+}
+
+.card_time {
+    font-size: 12px;
+    color: #AD7D52;
+    vertical-align: middle;
+    margin-left: 5px;
+    visibility: hidden;
+}
+
+.card_clock-info {
+    float: right;
+}
+
+.card_img {
+    visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card_info-hover {
+    position: absolute;
+    padding: 16px;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+}
+
+.card_img-hover {
+    transition: 0.2s all ease-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+    height: 300px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    top: 0;
+}
+
+.card {
+    margin-top: 3em;
+    margin-bottom: 2em;
+    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+    background-color: #fff;
+    width: 70%;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    visibility: none;
+}
+
+.card_info {
+    z-index: 2;
+    background-color: #fff;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 16px 24px 24px 24px;
+}
+
+.card_category {
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: #868686;
+}
+
+.card_title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    color: #001427;
+}
+
+.card_by {
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
+.card_author {
+    font-weight: 600;
+    text-decoration: none;
+    color: #AD7D52;
+}
+
+.card:hover .card_img-hover {
+    height: 100%;
+    opacity: 0.3;
+}
+
+.card:hover .card_info {
+    background-color: transparent;
+    position: relative;
+}
+
+.card:hover .card_info-hover {
+    opacity: 1;
+}
+
+.more-projects {
+    bottom: 0;
+    text-decoration: none;
+    padding: 2em 0 3em;
+    width: 100%;
+    text-align: center;
+    color: #001427;
+    font-family: 'Nunito', sans-serif;
+}
+
+.title {
+    text-decoration: none;
+    padding: 4em 0 0 0;
+    width: 100%;
+    text-align: center;
+    color: #001427;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.8em;
+}
+
+@media only screen and (min-width: 570px) {
+    body {
+        background-color: #D2DBDD;
+        display: flex;
+        display: -webkit-flex;
+        -webkit-justify-content: center;
+        -webkit-align-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards {
+        top: 20%;
+        width: 100%;
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: row;
+        justify-content: center;
+        -webkit-justify-content: center;
+        max-width: 900px;
+    }
+    .card {
+        margin: 1em;
+    }
+    .title {
+        display: none;
+    }
+    .view-all-projects {
+        text-decoration: none;
+        margin-top: 2.5%;
+        color: #001427;
+    }
+    .desktop-nav {
+        z-index: 10;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 10vh;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #fff;
+        font-family: nunito, sans-serif;
+    }
+    .container {
+        display: none;
+    }
+    .navlinks {
+        display: flex;
+        justify-content: space-around;
+    }
+    .navlinks li {
+        display: inline-block;
+        list-style-type: none
+    }
+    .navlinks a {
+        flex-direction: row;
+        color: #001427;
+        text-decoration: none;
+        padding: 0 1em;
+        margin: 0 1em;
+        letter-spacing: .07em
+    }
+    .navlinks a:hover {
+        color: #ffbe0b;
+    }
+    #navs {
+        position: fixed;
+        z-index: 5;
+    }
+    .menu {
+        display: none;
+    }
+    .signature {
+        top: 0;
+        padding-right: 3em;
+        padding-top: 1em;
+        transform: scale(1);
+        position: fixed;
+    }
+    .sidebar-navigation {
+        display: inline-block;
+    }
+    .sidebar-line {
+        display: inline-block;
+        margin-bottom: 15vh;
+        margin-left: 4em;
+        padding: 0em;
+        position: fixed;
+        bottom: 0em;
+        z-index: 10;
+        width: 2px;
+        height: 60px;
+        background-color: #001427;
+    }
+    .sidebar-title {
+        display: inline-block;
+        z-index: 10;
+        bottom: 0;
+        padding: 0em;
+        margin-left: 2em;
+        margin-bottom: 27vh;
+        position: fixed;
+        transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        letter-spacing: .07em;
+        font-weight: 500;
+        color: #001427;
+    }
+}
