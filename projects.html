@@ -4,40 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>- Projects</title>
-    <link rel="stylesheet" href="assets/projects/projects.css">
+    <title>Projects</title>
+    <link rel="stylesheet" href="./assets/projects/projects.css">
+    <link rel="icon" href="./assets/common resources/Favicon Blue.png" type="image/gif">
 </head>
 
 <body>
-    <nav id="navbar">
-        <div class="navlinks" data-hover>
-            <ul>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="#">Batho Koshero</a></li>
-                <li><a href="profile.html">Profile</a></li>
-            </ul>
+    <!--------------------------------- Background Text ---------------------------------------->
+
+    <div class="background">
+    </div>
+
+
+    <!--------------------------------- Mobile Navigation ---------------------------------------->
+
+    <div class="container">
+
+        <div class="content">
+
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <ul id="menus">
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="bathokoshero.html">Batho Koshero</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-    </nav>
+    </div>
 
+    <!--------------------------------- Signature ---------------------------------------->
 
-    <section class="more-projects" data-hover>
+    <div class="signature-icon">
+        <header>
+            <div class="second-navigation">
+                <div class="signature">
+                    <a href="index.html"><img src="./assets/common resources/custombrand-dark.svg" alt="brand-identity"></a>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!--------------------------------- Desktop Navigation ---------------------------------------->
+
+    <div class="desktop-nav">
+        <ul class="navlinks">
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="bathokoshero.html">Batho Koshero</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </div>
+
+    <!--------------------------------- Sidebar Navigation ---------------------------------------->
+
+    <div class="sidebar-navigation">
+        <div class="sidebar-line"></div>
+        <p class="sidebar-title">Projects</p>
+    </div>
+
+    <!--------------------------------- Title text ---------------------------------------->
+
+    <section class="title">
         <div>
-            <ul>
-                <li class="view-all-projects">
-                    <a href="https://www.google.com/">⎯ VIEW ALL PROJECTS ⎯</a>
-                </li>
-
-            </ul>
+            <p>These three projects<br>Prajjwal enjoyed the most.</p>
         </div>
     </section>
 
 
-    <div class="custombrand">
-        <img src="assets/common resources/custombrand-dark.svg" alt="#">
-    </div>
-
+    <!--------------------------------- Cards ---------------------------------------->
 
     <section class="cards">
+
+
+
+
         <article class="card card-1">
             <div class="card_info-hover">
                 <svg class="card_like" viewBox="0 0 24 24">
@@ -50,7 +94,7 @@
 
             </div>
             <div class="card_img"></div>
-            <a href="#" class="card_link">
+            <a href="#/" class="card_link">
                 <div class="card_img-hover"></div>
             </a>
             <div class="card_info">
@@ -73,7 +117,7 @@
 
             </div>
             <div class="card_img"></div>
-            <a href="#" class="card_link">
+            <a href="#/" class="card_link">
                 <div class="card_img-hover"></div>
             </a>
             <div class="card_info">
@@ -96,7 +140,7 @@
 
             </div>
             <div class="card_img"></div>
-            <a href="#" class="card_link">
+            <a href="#/" class="card_link">
                 <div class="card_img-hover"></div>
             </a>
             <div class="card_info">
@@ -105,14 +149,23 @@
                 <span class="card_by">for <a href="#" class="card_author" title="author">deep-six</a></span>
             </div>
         </article>
+
     </section>
 
-    <div class="cursor">
-        <div class="cursor__inner cursor__inner--circle"></div>
-        <div class="cursor__inner cursor__inner--dot"></div>
-    </div>
+    <!--------------------------------- More Projects ---------------------------------------->
 
-    <script src="js/demo.js"></script>
+    <section class="more-projects">
+        <div>
+            <ul>
+                <li class="view-all-projects">
+                    <a href="https://www.google.com/">⎯ VIEW ALL PROJECTS ⎯</a>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+
+
 
 </body>
 
