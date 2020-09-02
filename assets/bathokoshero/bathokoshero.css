@@ -1,308 +1,456 @@
-@import 'https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,300&family=Rubik:wght@400;500&display=swap';
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
-
-body {
-    background: #ffffff;
-    text-align: center;
-}
-
-p {
-    font-family: 'Nunito', sans-serif;
-    font-size: 1em;
-    line-height: 1.6em;
-}
-
-ul {
-    list-style-type: none;
-}
-
-.desktop-nav {
-    display: none;
-}
-
-.sidebar-navigation {
-    display: none;
-}
-
-.signature {
-    transform: scale(0.7);
-    position: fixed;
-    margin-top: 1em;
-    right: 0;
-    z-index: 5;
-}
-
-.forpc {
-    display: none;
-}
-
-.container {
-    margin-top: 0px;
-    Display: flex;
-    align-items: center;
-    z-index: 10;
-    position: fixed;
-}
-
-.content {
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-}
-
-nav {
-    background-color: none;
-    height: 100vh;
-}
-
-#menuToggle {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 20px;
-    left: 25px;
-    z-index: 1;
-    -webkit-user-select: none;
-    user-select: none;
-}
-
-#menuToggle input {
-    display: flex;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    cursor: pointer;
-    opacity: 0;
-    z-index: 5;
-}
-
-#menuToggle span {
-    display: flex;
-    width: 30px;
-    margin: 4px 0;
-    height: 3px;
-    stroke-linecap: round;
-    position: relative;
-    background: #001427;
-    z-index: 5;
-    transform-origin: 5px 0px;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
-}
-
-#menuToggle span:first-child {
-    transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2) {
-    transform-origin: 0% 100%;
-}
-
-#menuToggle input:checked~span {
-    opacity: 1;
-    transform: rotate(45deg) translate(10px, 2px);
-    background: #D2DBDD;
-}
-
-#menuToggle input:checked~span:nth-last-child(2) {
-    transform: rotate(-45deg) translate(-5px, 15px);
-}
-
-#menus {
-    position: absolute;
-    width: 200px;
-    height: 100vh;
-    margin: -50px 0 0 -50px;
-    padding: 50px;
-    padding-top: 150px;
-    background-color: #001427;
-    -webkit-font-smoothing: antialiased;
-    transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-}
-
-#menus li {
-    margin: 0;
-    padding: 0 0 3em .5em;
-}
-
-#menus a {
-    text-decoration: none;
-    color: #D2DBDD;
-    opacity: 1;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.4em;
-    font-weight: 400;
-    transition: 200ms;
-}
-
-#menuToggle input:checked~ul {
-    transform: none;
-}
-
-.main-gif {
-    width: 100%;
-    height: auto;
-    z-index: 1;
-    padding-top: 5vh;
-}
-
-.intro-text-mobile {
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.2em;
-    padding: 0 2em 1em;
-    position: relative;
-}
-
-.intro-text-desktop {
-    display: none;
-}
-
-.scroll-button {
-    transform: scale(.5);
-    padding-top: 2em;
-}
-
-.story-telling {
-    font-family: 'Rubik', sans-serif;
-    font-size: 1em;
-    padding: 2em;
-    line-height: 3em;
-    color: #001427;
-}
-
-.project-title {
-    color: #001427;
-    font-family: 'Rubik', sans-serif;
-    font-size: 1.3em;
-    font-weight: 500;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    position: relative;
-}
-
-.project-description {
-    color: #001427;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.2em;
-    padding: 0 2em 2em;
-    position: relative;
-}
-
-.horizontal-line {
-    display: inline-block;
-    width: 100px;
-    height: 5px;
-    background-color: #001427;
-    border-radius: 5px;
-    margin: 2em;
-    margin-bottom: 4em;
-}
-
-.the-kosheros {
-    color: #8D0801;
-    font-family: 'Rubik', sans-serif;
-    font-size: 1.3em;
-    font-weight: 500;
-    padding-bottom: 2em;
-}
-
-.koshero-cell {
-    padding-bottom: 3em;
-}
-
-.kosheros {
-    position: relative;
-    display: inline-block;
-    margin: 15px;
-    max-width: 90px;
-    width: 100%;
-    color: #001427;
-    font-size: 16px;
-    box-shadow: none !important;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-}
-
-.kosheros *,
-.kosheros:before,
-.kosheros:after {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-}
-
-.kosheros:before,
-.kosheros:after {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    border-radius: 50%;
-    content: '';
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    z-index: -1;
-    border: 2px solid #FFBE0B;
-    border-color: transparent #FFBE0B;
-}
-
-.kosheros img {
-    max-width: 100%;
-    backface-visibility: hidden;
-    vertical-align: top;
-    border-radius: 50%;
-    padding: 10px;
-}
-
-.kosheros a {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.kosheros figcaption {
-    position: absolute;
-    top: 5px;
-    bottom: 5px;
-    left: 5px;
-    right: 5px;
-    opacity: 0;
-    background-color: #001427;
-    border-radius: 50%;
-}
-
-.kosheros:hover figcaption,
-.kosheros.hover figcaption {
-    opacity: .9;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-}
-
-.kosheros:hover:before,
-.kosheros.hover:before,
-.kosheros:hover:after,
-.kosheros.hover:after {
-    border-width: 10px;
-}
-
-.kosheros:hover:before,
-.kosheros.hover:before {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(45deg);
-}
-
-.kosheros:hover:after,
-.kosheros.hover:after {
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-45deg);
-}
+ @import 'https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,300&family=Rubik:wght@400;500&display=swap';
+ * {
+     margin: 0;
+     padding: 0;
+     text-decoration: none;
+ }
+ 
+ body {
+     background: #ffffff;
+ }
+ 
+ p {
+     font-family: 'Nunito', sans-serif;
+     font-size: 1em;
+     line-height: 1.6em;
+     text-align: center;
+ }
+ 
+ ul {
+     list-style-type: none;
+ }
+ 
+ .desktop-nav {
+     display: none;
+ }
+ 
+ .sidebar-navigation {
+     display: none;
+ }
+ 
+ .signature {
+     transform: scale(0.7);
+     position: fixed;
+     margin-top: 1em;
+     right: 0;
+     z-index: 5;
+ }
+ 
+ .forpc {
+     display: none;
+ }
+ 
+ .container {
+     margin-top: 0px;
+     Display: flex;
+     align-items: center;
+     z-index: 10;
+     position: fixed;
+ }
+ 
+ .content {
+     z-index: 10;
+     width: 100%;
+     height: 100%;
+ }
+ 
+ nav {
+     background-color: none;
+     height: 100vh;
+ }
+ 
+ #menuToggle {
+     display: flex;
+     flex-direction: column;
+     position: relative;
+     top: 20px;
+     left: 25px;
+     z-index: 1;
+     -webkit-user-select: none;
+     user-select: none;
+ }
+ 
+ #menuToggle input {
+     display: flex;
+     width: 40px;
+     height: 32px;
+     position: absolute;
+     cursor: pointer;
+     opacity: 0;
+     z-index: 5;
+ }
+ 
+ #menuToggle span {
+     display: flex;
+     width: 30px;
+     margin: 4px 0;
+     height: 3px;
+     stroke-linecap: round;
+     position: relative;
+     background: #001427;
+     z-index: 5;
+     transform-origin: 5px 0px;
+     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+ }
+ 
+ #menuToggle span:first-child {
+     transform-origin: 0% 0%;
+ }
+ 
+ #menuToggle span:nth-last-child(2) {
+     transform-origin: 0% 100%;
+ }
+ 
+ #menuToggle input:checked~span {
+     opacity: 1;
+     transform: rotate(45deg) translate(10px, 2px);
+     background: #D2DBDD;
+ }
+ 
+ #menuToggle input:checked~span:nth-last-child(2) {
+     transform: rotate(-45deg) translate(-5px, 15px);
+ }
+ 
+ #menus {
+     position: absolute;
+     width: 200px;
+     height: 100vh;
+     margin: -50px 0 0 -50px;
+     padding: 50px;
+     padding-top: 150px;
+     background-color: #001427;
+     -webkit-font-smoothing: antialiased;
+     transform-origin: 0% 0%;
+     transform: translate(-100%, 0);
+     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+ }
+ 
+ #menus li {
+     margin: 0;
+     padding: 0 0 3em .5em;
+ }
+ 
+ #menus a {
+     text-decoration: none;
+     color: #D2DBDD;
+     opacity: 1;
+     font-family: 'Nunito', sans-serif;
+     font-size: 1.4em;
+     font-weight: 400;
+     transition: 200ms;
+ }
+ 
+ #menuToggle input:checked~ul {
+     transform: none;
+ }
+ 
+ .main-gif {
+     width: 100%;
+     height: auto;
+     z-index: 1;
+     padding-top: 6em;
+     padding-bottom: 4em;
+ }
+ 
+ .intro-text-mobile {
+     font-family: 'Nunito', sans-serif;
+     font-size: 1.2em;
+     padding: 0 2em 1em;
+     position: relative;
+     text-align: center;
+ }
+ 
+ .intro-text-desktop {
+     display: none;
+ }
+ 
+ .scroll-button {
+     transform: scale(.5);
+     padding-top: 2em;
+     text-align: center;
+ }
+ 
+ .story-telling {
+     font-family: 'Rubik', sans-serif;
+     font-size: 1em;
+     padding: 2em;
+     line-height: 3em;
+     color: #001427;
+     text-align: center;
+ }
+ 
+ .bathokoshero-projects {
+     text-align: center;
+ }
+ 
+ .project-title {
+     color: #001427;
+     font-family: 'Rubik', sans-serif;
+     font-size: 1.3em;
+     font-weight: 500;
+     padding-top: 2em;
+     padding-bottom: 1em;
+     position: relative;
+     text-align: center;
+ }
+ 
+ .project-description {
+     color: #001427;
+     font-family: 'Nunito', sans-serif;
+     font-size: 1.2em;
+     padding: 0 2em 2em;
+     position: relative;
+ }
+ 
+ .horizontal-line {
+     display: inline-block;
+     width: 100px;
+     height: 5px;
+     background-color: #001427;
+     border-radius: 5px;
+     margin: 2em;
+     margin-bottom: 4em;
+ }
+ 
+ .the-kosheros {
+     color: #8D0801;
+     font-family: 'Rubik', sans-serif;
+     font-size: 1.3em;
+     font-weight: 500;
+     padding-bottom: 2em;
+     text-align: center;
+ }
+ 
+ .koshero-cell {
+     padding-bottom: 3em;
+     text-align: center;
+ }
+ 
+ .kosheros {
+     position: relative;
+     display: inline-block;
+     margin: 15px;
+     max-width: 90px;
+     width: 100%;
+     color: #001427;
+     font-size: 16px;
+     box-shadow: none !important;
+     -webkit-transform: translateZ(0);
+     transform: translateZ(0);
+ }
+ 
+ .kosheros *,
+ .kosheros:before,
+ .kosheros:after {
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+     -webkit-transition: all 0.3s linear;
+     transition: all 0.3s linear;
+ }
+ 
+ .kosheros:before,
+ .kosheros:after {
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+     border-radius: 50%;
+     content: '';
+     position: absolute;
+     top: 0px;
+     bottom: 0px;
+     left: 0px;
+     right: 0px;
+     z-index: -1;
+     border: 2px solid #FFBE0B;
+     border-color: transparent #FFBE0B;
+ }
+ 
+ .kosheros img {
+     max-width: 100%;
+     backface-visibility: hidden;
+     vertical-align: top;
+     border-radius: 50%;
+     padding: 10px;
+ }
+ 
+ .kosheros a {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     z-index: 1;
+ }
+ 
+ .kosheros figcaption {
+     position: absolute;
+     top: 5px;
+     bottom: 5px;
+     left: 5px;
+     right: 5px;
+     opacity: 0;
+     background-color: #001427;
+     border-radius: 50%;
+ }
+ 
+ .kosheros:hover figcaption,
+ .kosheros.hover figcaption {
+     opacity: .9;
+     -webkit-transform: translateX(0);
+     transform: translateX(0);
+ }
+ 
+ .kosheros:hover:before,
+ .kosheros.hover:before,
+ .kosheros:hover:after,
+ .kosheros.hover:after {
+     border-width: 10px;
+ }
+ 
+ .kosheros:hover:before,
+ .kosheros.hover:before {
+     -webkit-transform: rotate(90deg);
+     transform: rotate(45deg);
+ }
+ 
+ .kosheros:hover:after,
+ .kosheros.hover:after {
+     -webkit-transform: rotate(-90deg);
+     transform: rotate(-45deg);
+ }
+ 
+ @media only screen and (min-width: 570px) {
+     .desktop-nav {
+         z-index: 10;
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         min-height: 10vh;
+         position: fixed;
+         bottom: 0;
+         width: 100%;
+         background-color: #fff;
+         font-family: nunito, sans-serif;
+     }
+     .container {
+         display: none;
+     }
+     .navlinks {
+         display: flex;
+         justify-content: space-around;
+     }
+     .navlinks li {
+         display: inline-block;
+         list-style-type: none
+     }
+     .navlinks a {
+         flex-direction: row;
+         color: #001427;
+         text-decoration: none;
+         padding: 0 1em;
+         margin: 0 1em;
+         letter-spacing: .07em
+     }
+     .navlinks a:hover {
+         color: #8D0801;
+     }
+     #navs {
+         position: fixed;
+         z-index: 5;
+     }
+     .menu {
+         display: none;
+     }
+     .signature {
+         top: 0;
+         padding-right: 2em;
+         padding-top: 1em;
+         transform: scale(1);
+         position: fixed;
+     }
+     .sidebar-navigation {
+         display: inline-block;
+     }
+     .sidebar-line {
+         display: inline-block;
+         margin-bottom: 15vh;
+         margin-left: 4em;
+         padding: 0em;
+         position: fixed;
+         bottom: 0em;
+         z-index: 10;
+         width: 2px;
+         height: 60px;
+         background-color: #001427;
+     }
+     .sidebar-title {
+         display: inline-b lock;
+         z-index: 10;
+         bottom: 0;
+         padding: 0em;
+         margin-left: 1.5em;
+         margin-bottom: 28vh;
+         position: fixed;
+         transform: rotate(-90deg);
+         -webkit-transform: rotate(-90deg);
+         -moz-transform: rotate(-90deg);
+         -o-transform: rotate(-90deg);
+         -ms-transform: rotate(-90deg);
+         letter-spacing: .07em;
+         font-weight: 500;
+         color: #001427;
+     }
+     .footer {
+         display: none;
+     }
+     .main-gif {
+         max-width: 40em;
+         z-index: 1;
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+     }
+     .intro-text-mobile {
+         display: none;
+     }
+     .intro-text-desktop {
+         display: block;
+         font-family: 'Rubik', sans-serif;
+         font-size: 1.3em;
+         font-weight: 400;
+     }
+     .scroll-button {
+         padding-top: 2em;
+     }
+     .story-telling {
+         font-family: 'Rubik', sans-serif;
+         font-size: 1.5em;
+         font-weight: 400;
+         padding: 2em 30vw 4em;
+     }
+     .horizontal-line {
+         display: none;
+     }
+     .bathokoshero-projects {
+         width: 100%;
+         display: flex;
+         display: -webkit-flex;
+         flex-direction: row;
+         justify-content: center;
+         -webkit-justify-content: center;
+         text-align: left;
+     }
+     .project-title:hover {
+         color: #8D0801;
+     }
+     .project-description {
+         margin: .5em 1em;
+         width: 300px;
+         font-family: 'Nunito', sans-serif;
+     }
+     .the-kosheros {
+         padding: 2em 0;
+     }
+     .koshero-cell {
+         padding-bottom: 8em;
+     }
+ }
