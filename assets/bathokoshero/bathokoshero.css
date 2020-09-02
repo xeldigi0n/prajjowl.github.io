@@ -155,7 +155,7 @@
  .intro-text-mobile {
      font-family: 'Nunito', sans-serif;
      font-size: 1.2em;
-     padding: 0 2em 1em;
+     padding: 1em 2em 1em;
      position: relative;
      text-align: center;
  }
@@ -166,7 +166,7 @@
  
  .scroll-button {
      transform: scale(.5);
-     padding-top: 2em;
+     padding-top: 1em;
      text-align: center;
  }
  
