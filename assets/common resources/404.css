@@ -1,0 +1,61 @@
+@import 'https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,300&family=Rubik:wght@400;500&display=swap';
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F9;
+    text-decoration: none;
+}
+
+.text {
+    text-align: center;
+    color: #001427;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 6em;
+    font-weight: 600;
+    padding-top: 30vh;
+}
+
+h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    padding: 2em;
+}
+
+.h3 {
+    border: none;
+    background: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 570px) {
+    .text {
+        text-align: center;
+        color: #001427;
+    }
+    h1 {
+        font-family: 'Rubik', sans-serif;
+        font-size: 12em;
+        font-weight: 600;
+        padding-top: 20vh;
+    }
+    h2 {
+        font-family: 'Nunito', sans-serif;
+        font-size: 2em;
+        font-weight: 400;
+    }
+    .h3 {
+        border: none;
+        background: none;
+        cursor: pointer;
+        font-family: 'Nunito', sans-serif;
+        font-size: 1em;
+        font-weight: 400;
+    }
+}
